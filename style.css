@@ -374,6 +374,15 @@ footer h2 {
         font-size: 70%;
         margin-top: 5px;
     }
+    .imag-1 img {
+        width: 150px;
+        height: 120px;
+    }
+    .imag-2 img{
+        width: 200px;
+        height: 300px;
+
+    }
   
  }
 
