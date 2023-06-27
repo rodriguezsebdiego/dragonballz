@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2? family=Playfair+Display&display=swap");
+/* font-family: 'Playfair Display', serif; */
+@import url("https://fonts.googleapis.com/css2?swap");
+/* font-family: 'Inconsolata', monospace; */
+/* header-----------------------------------------------------------------------------------------------------------------*/
+header {
+  background-color: #D67711;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+header .logo img {
+  width: 70%;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+}
+header nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #D67711;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  height: 10%;
+}
+footer h3 {
+  color: black;
+  font-size: 3rem;
+}
+footer .redes-sociales {
+  width: 100%;
+  font-size: 5rem;
+}
+footer .redes-sociales ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0%;
+  font-size: 1rem;
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .redes-sociales ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.redes-sociales a:hover {
+  color: white;
+}
+
+/*index----------------------------------------------------------------------------------------------*/
+.indexgoku {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.indexgoku .goku1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.indexgoku .goku1 img {
+  margin-top: 150px;
+  width: 50%;
+}
+.indexgoku .primerParrafo {
+  color: rgb(0, 0, 0);
+  font-family: "Inconsolata", monospace;
+}
+.indexgoku .primerParrafo h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration-line: underline;
+  font-size: 3rem;
+}
+.indexgoku .primerParrafo h1 p {
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+}
+.indexgoku .primerParrafo .banner img {
+  margin-bottom: 10px;
+}
+
+/*personajes-----------------------------------------------------------------------------*/
+.personajes {
+  display: grid;
+  grid-template-rows: repeat(12, 150px);
+  grid-template-columns: repeat(6, 300px);
+  gap: 4px;
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 4px;
+}
+.personajes .crilin {
+  grid-column: 2/5;
+  grid-row: 1/4;
+}
+.personajes .crilin .crilinflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+.personajes .crilin .crilinflex img {
+  width: 20%;
+}
+.personajes .crilin .crilinflex h2 {
+  font-size: 1rem;
+  width: 100%;
+}
+.personajes .crilin img:hover {
+  width: 21%;
+  transition: 1s;
+}
+.personajes .goku {
+  grid-column: 2/5;
+  grid-row: 4/7;
+}
+.personajes .goku .gokuflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+.personajes .goku .gokuflex img {
+  width: 30%;
+}
+.personajes .goku .gokuflex h2 {
+  font-size: 1rem;
+  width: 100%;
+}
+.personajes .gohan {
+  grid-column: 2/5;
+  grid-row: 7/9;
+}
+.personajes .gohan .gohanflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+.personajes .gohan .gohanflex img {
+  width: 20%;
+}
+.personajes .gohan .gohanflex h2 {
+  font-size: 1rem;
+  width: 100%;
+}
+.personajes .piccolo {
+  grid-column: 2/5;
+  grid-row: 10/13;
+}
+.personajes .piccolo .piccoloflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+.personajes .piccolo .piccoloflex img {
+  width: 20%;
+}
+.personajes .piccolo .piccoloflex h2 {
+  font-size: 1rem;
+  width: 100%;
+}
+
+/*imagenes--------------------------------------------------------------------------------------*/
+.fotos {
+  margin-top: 120px;
+}
+.fotos .imag-1 img, .fotos .imag-2 img {
+  margin: 10px;
+  width: 50%;
+}
+/*videos--------------------------------------------------------------------------------*/
+.videos {
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+.videos .video1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  gap: 10px;
+  margin-bottom: 0%;
+}
+
+/* formulario-----------------------------------------------------------------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  margin: 10% 40%;
+}
+form h1 {
+  text-align: center;
+}
+form .formulario {
+  width: 100%;
+  height: 100%;
+}
+form .formulario label {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+form .formulario input {
+  width: 50%;
+  height: 50%;
+}
+form .formulario textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #edfff0;
+  border: 2px solid #f0faf1;
+  outline: none;
+}
+
+/*mediaq------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  header .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .logo img {
+    width: 50%;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav .link {
+    justify-content: space-between;
+  }
+  header nav .link a {
+    font-size: 80%;
+  }
+  /* personajes */
+  .personajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .crilin, .goku, .gohan, .piccolo, img {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .crilin, .goku, .gohan, .piccolo h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .crilin, .goku, .gohan, .piccolo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  /* index---------------------------------------------- */
+  .primerParrafo h1 {
+    font-size: 10%;
+  }
+  .primerParrafo p {
+    font-size: 1rem;
+  }
+  .videos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video1 {
+    width: 80%;
+    height: 80%;
+  }
+  .imag-1 img, .fotos .imag-2 img {
+    margin-top: 20px;
+    width: 45%;
+    height: 70%;
+  }
+  .imag-2 img {
+    margin-top: 1px;
+    width: 45%;
+    height: 60%;
+  }
+  footer a {
+    font-size: 1rem;
+  }
+  footer h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+body {
+  /*  background-image: url(imagenes/kamohouse.jpg);*/
+  background-color: #008b8b;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=stilossass.css.map */

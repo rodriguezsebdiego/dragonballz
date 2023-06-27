@@ -1,42 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2? family=Playfair+Display&display=swap');
-/* font-family: 'Playfair Display', serif; */
-@import url('https://fonts.googleapis.com/css2?swap');
-/* font-family: 'Inconsolata', monospace; */
 
-*{
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 62.5%;
-}
-h1{
-    font-size: 5rem;
-}
-h2{
-    font-size: 4rem;
-}
-h3{
-    font-size: 3rem;
-    
-}
-p{
-    font-size: 2rem;
-}
-body{
-  /*  background-image: url(imagenes/kamohouse.jpg);*/
-  background-color: #008b8b;
-    background-size:contain ;
-    background-repeat: no-repeat;
-    background-position: center center;
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-   border: solid rgb(100, 6, 6) 8px;
- 
-}
+
+
    
 
 /* header ----------------------------------------------------------------------------------------------------------------------------------*/
@@ -98,124 +63,17 @@ header a{
 /* index --------------------------------------------------------------------------------------------------------------------------------*/
 
 
-.indexgoku{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} 
-.goku1 img {
-  margin-top: 30px;
-  width: 50%;
-}
-.primerParrafo {
-   
-    color: rgb(0, 0, 0);
-    font-family: 'Inconsolata', monospace;
-}
-.primerParrafo h1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-decoration-line:underline;
-    font-size: 3rem;
-  
-   
-}
-
-.primerParrafo p{
-   
-    font-size: 2rem;
-    font-family: 'Inconsolata', monospace;
-}
 
 
 
-.goku1{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-
-}
-.indexgoku{
-    margin: 0 auto;
-}
-.banner img{
-    margin-bottom: 10px;
-}
 
 
 /* personajes ------------------------------------------------------------------------------------------------------------------------------*/
 
-.personajes{
-   
-    display: grid;
-    grid-template-rows:repeat(12,150px) ;
-   grid-template-columns: repeat(6, 300px);
-   gap: 4px;
-   width: 100%;
-   margin-top: 4px;
-   margin-bottom: 4px;
-  
-
-}
-
-
-.crilin, .goku, .gohan, .piccolo {
-    /* border: 5px solid white; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 40px;    
-} 
-.crilin, .goku , .gohan, .piccolo, h2{
-    font-size: 1rem;
-    width: 100%;
-}
-
-
-.crilin{
-    grid-column: 2/5;
-    grid-row: 1/4;
-   
-    
-}
-.crilin img:hover{
-    width:25% ;
-    transition: 1s;
-}
-.crilin img {
-    width: 20%;
-}
 
 
 
-.goku{
-    grid-column: 2/5;
-    grid-row: 4/7;
-}
-.goku img {
-    width: 30%;
-}
 
-.gohan{
-    grid-column: 2/5;
-    grid-row: 7/10;
-}
-.gohan img {
-    width: 20%;
-}
-
-.piccolo{
-    grid-column:2/5;
-    grid-row: 10/13;
-}
-.piccolo img{
-    width: 20%;
-}
 
 
 
@@ -232,223 +90,34 @@ header a{
 
 
 /* fomulario ------------------------------------------------------------------------------------------------------------------------------------*/
-.formulario{
-    width: 100%;
-    height: 100%;
-}
-.formulario, label{
-    width: 50%;
-    height: 50%;
 
-}
-formulario input{
-    width: 50%;
-    height: 50%;
-}
-form h2{
-    text-align: center;
-    }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-    margin: 10% 30%;
-}
-input, textarea{
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: #edfff0;
-    border: 2px solid #f0faf1;
-    outline: none;
-}
+.formulario, 
+formulario 
+form 
+
+input, 
 label{
-    display: flex;
-    flex-direction: column;
+   
 }
 
 /* videos -----------------------------------------------------------------------------------------------------------------------------*/
 
 .videos{
-    display: flex;
-    flex-direction:row ;
-    justify-content: center;
-    
-    gap: 10px;
-    margin: 10px;
+   
 }
 
 
 /*  imagenes -------------------------------------------------------------------------------------------------------------------------*/
-.imag-1 img {
-   margin: 5px;
-    width: 50%;
-    height: 60%;
-    
-}
-.imag-2 img{
-    margin: 5px;
-    width: 50%;
-    height: 60%;
-    
 
-}
+
 
 /* footer----------------------------------------------------------------------------------------------------------------------------- */
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-}
-footer {
-    
-    background-color: #D67711;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-top: auto;
-    
-       
-}
-footer, a{
-    text-decoration: none;
-    color: black;
-    
-    
-}
-footer, h3 {
-   
-   color: black;
-   font-size: 3rem;
-}
-.redes-sociales ul {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0%;
-    font-size: 1rem;
-    margin: 1% 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-  
-}
-.redes-sociales, a {
-    width: 100%;
-    font-size: 5rem;
-}
 
-.redes-sociales a:hover{
-    color:white;
-}
-@media only screen and (max-width:500px) {
-   
-    header{
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
-    }
-    header a{
-     font-size: 50%;
-    }
-    .logo img {
-    width: 30%;
-     
-    }
-    nav {
-     width: 80%;
-    }
-   .logo{
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
 
-   /* personajes */
-   .personajes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-   
-       
-   }
-  
-   
-   .crilin, .goku, .gohan, .piccolo, img{
-        width: 80%;
-        margin-top: 10px;
-     }
-     
-     .crilin, .goku, .gohan, .piccolo h2 {
-        font-size: 1rem;
-        margin-top: 20px;
-     }
-     .crilin, .goku, .gohan, .piccolo{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-         align-items: center;
-       
-     } 
-     
-     /* index---------------------------------------------- */
-     .primerParrafo h1{
-        font-size: 1.5rem
-     }
-     .primerParrafo p{
-        font-size: 1rem;
-     }
-    
 
-     .videos{
-         flex-direction: column;
-         align-items: center;     
-       
-     }
-     .video1{
-        width: 80%;
-        height: 80%;
-     }
-  
-    }
-  
-    .imag-1 img {
-        margin-top: 20px;
-        width: 45%;
-        height:70%;
-    }
-    .imag-2 img{
-        margin-top: 1px;
-        width: 45%;
-        height:60%;
 
-    }
-    footer a {
-        font-size: 1rem;
-    }
-    footer h3{
-        font-size: 1rem;
-        margin-top: 5px;
-    }
-  
-  
- }
+
 
 
 

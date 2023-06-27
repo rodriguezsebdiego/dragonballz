@@ -5,7 +5,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   height: 100%;
+   width: 100%;
+     position: fixed;
+  
+   
    .logo{
 
     img{
@@ -44,4 +47,50 @@ nav a:hover {
     
   
 
+}
+// footer  /*footer*/
+footer {
+    
+    background-color: #D67711;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    height: 10%;
+   
+    h3 {
+   
+        color: black;
+        font-size: 3rem;
+     }
+     .redes-sociales, {
+        width: 100%;
+        font-size: 5rem;
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0%;
+            font-size: 1rem;
+            margin: 1% 1%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: black;
+                
+                
+            }
+            
+          
+        }
+    }
+    
+       
+} 
+.redes-sociales a:hover{
+    color:white;
 }
