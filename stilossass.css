@@ -214,11 +214,12 @@ footer .redes-sociales ul a {
 .videos {
   margin-top: 150px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .videos .video1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin: 5px;
   gap: 10px;
   margin-bottom: 0%;
@@ -317,14 +318,20 @@ form .formulario textarea {
   .primerParrafo p {
     font-size: 1rem;
   }
+  /*videos-------------------*/
   .videos {
     flex-direction: column;
     align-items: center;
   }
   .video1 {
     width: 80%;
-    height: 80%;
+    height: 60%;
   }
+  .video1 iframe {
+    width: auto;
+    height: auto;
+  }
+  /*imagenes-----------------*/
   .imag-1 img, .fotos .imag-2 img {
     margin-top: 20px;
     width: 45%;

@@ -14,7 +14,7 @@
                 width: 50%;
                  
                 }
-          }
+        }
           nav {
             width: 80%;
             .link{
@@ -25,9 +25,9 @@
                    }
 
             }
-           }
+        }
           
-       }
+    }
        
         
        
@@ -70,19 +70,27 @@
            font-size: 1rem;
         }
        
-   
+         /*videos-------------------*/
         .videos{
             flex-direction: column;
-            align-items: center;     
+            align-items: center;    
+         
           
         }
         .video1{
+           
+                
+           
            width: 80%;
-           height: 80%;
+           height: 60%;
+           iframe {
+            width: auto;
+            height: auto;
+           }
         }
-     
+             
        
-     
+        /*imagenes-----------------*/
        .imag-1 img {
            margin-top: 20px;
            width: 45%;
