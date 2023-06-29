@@ -1,7 +1,46 @@
+/*mixin----------------------------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2? family=Playfair+Display&display=swap");
 /* font-family: 'Playfair Display', serif; */
 @import url("https://fonts.googleapis.com/css2?swap");
 /* font-family: 'Inconsolata', monospace; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+body {
+  /*  background-image: url(imagenes/kamohouse.jpg);*/
+  background-color: #008b8b;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+}
+
 /* header-----------------------------------------------------------------------------------------------------------------*/
 header {
   background: radial-gradient(circle, rgb(239, 129, 18) 14%, rgb(207, 139, 55) 90%);
@@ -145,6 +184,7 @@ footer .redes-sociales ul a {
 .personajes .crilin .crilinflex h2 {
   font-size: 1rem;
   width: 100%;
+  margin-top: 10px;
 }
 .personajes .crilin img:hover {
   width: 21%;
@@ -169,6 +209,7 @@ footer .redes-sociales ul a {
 .personajes .goku .gokuflex h2 {
   font-size: 1rem;
   width: 100%;
+  margin-top: 10px;
 }
 .personajes .gohan {
   grid-column: 2/5;
@@ -189,6 +230,7 @@ footer .redes-sociales ul a {
 .personajes .gohan .gohanflex h2 {
   font-size: 1rem;
   width: 100%;
+  margin-top: 10px;
 }
 .personajes .piccolo {
   grid-column: 2/5;
@@ -209,6 +251,7 @@ footer .redes-sociales ul a {
 .personajes .piccolo .piccoloflex h2 {
   font-size: 1rem;
   width: 100%;
+  margin-top: 10px;
 }
 
 /*imagenes--------------------------------------------------------------------------------------*/
@@ -293,7 +336,7 @@ form .formulario textarea {
     justify-content: center;
   }
   header .logo img {
-    width: 50%;
+    width: 40%;
   }
   header nav {
     width: 80%;
@@ -304,26 +347,36 @@ form .formulario textarea {
   header nav .link a {
     font-size: 80%;
   }
-  /* personajes */
+  /* personajes -------------------------------------------*/
   .personajes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .crilin, .goku, .gohan, .piccolo, img {
+  .personajes .crilin {
     width: 80%;
     margin-top: 10px;
-  }
-  .crilin, .goku, .gohan, .piccolo h2 {
     font-size: 1rem;
     margin-top: 20px;
   }
-  .crilin, .goku, .gohan, .piccolo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+  .personajes .goku {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .personajes .gohan {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .personajes .piccolo {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
   }
   /* index---------------------------------------------- */
   .indexgoku .primerParrafo h1 {
@@ -333,21 +386,21 @@ form .formulario textarea {
   .indexgoku .primerParrafo p {
     font-size: 1rem;
   }
-  /*videos-------------------*/
+  /*videos---------------------------------------------*/
   .videos {
     flex-direction: column;
     align-items: center;
     margin-top: 120 px;
   }
-  .video1 {
+  .videos .video1 {
     width: 80%;
     height: 60%;
   }
-  .video1 iframe {
+  .videos .video1 iframe {
     width: auto;
     height: auto;
   }
-  /*imagenes-----------------*/
+  /*imagenes----------------------------------*/
   .fotos .imag-1 img {
     margin-top: 20px;
     width: 40%;
@@ -358,7 +411,7 @@ form .formulario textarea {
     width: 40%;
     height: 50%;
   }
-  /* contatos---------------------------------------------------------------------------------------------------------*/
+  /* contatos------------------------------------------------------------------------------------*/
   form {
     width: 60%;
     height: 50%;
@@ -377,50 +430,13 @@ form .formulario textarea {
     width: 100%;
   }
   /*footer------------------------------------------------------------------------------------------------------------*/
-  footer a {
-    font-size: 1rem;
-  }
   footer h3 {
     font-size: 1rem;
     margin-top: 5px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-h3 {
-  font-size: 3rem;
-}
-
-p {
-  font-size: 2rem;
-}
-
-body {
-  /*  background-image: url(imagenes/kamohouse.jpg);*/
-  background-color: #008b8b;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  z-index: 1;
+  footer .redes-sociales a {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=stilossass.css.map */

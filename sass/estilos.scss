@@ -1,11 +1,6 @@
 @import "partials/variables.scss";
-@import"partials/headerfooter.scss";
-@import "partials/index.scss";
-@import"partials/personajes.scss";
-@import "partials/imagenes.scss";
-@import "partials/videos.scss";
-@import "partials/contacto.scss";
-@import "partials/mediaQ";
+
+
 
 *{
     margin: 0;
@@ -40,3 +35,12 @@ body{
    z-index: 1;
  
 }
+
+@import"partials/headerfooter.scss";
+@import "partials/index.scss";
+@import"partials/personajes.scss";
+@import "partials/imagenes.scss";
+@import "partials/videos.scss";
+@import "partials/contacto.scss";
+@import "partials/mediaQ";
+

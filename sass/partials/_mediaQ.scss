@@ -12,7 +12,7 @@
             align-items: center;
             justify-content: center;
             img {
-                width: 50%;
+                width: 40%;
                  
                 }
         }
@@ -34,34 +34,33 @@
        
       
    
-      /* personajes */
+      /* personajes -------------------------------------------*/
       .personajes{
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       
+       .crilin {
+        @include personajes-img;
+        @include personajes-h2;
+       }
+       .goku {
+        @include personajes-img;
+        @include personajes-h2;
+       }
+       .gohan {
+        @include personajes-img;
+        @include personajes-h2;
+       }
+       .piccolo {
+        @include personajes-img;
+        @include personajes-h2;
+       }
       
           
       }
      
       
-      .crilin, .goku, .gohan, .piccolo, img{
-           width: 80%;
-           margin-top: 10px;
-        }
-        
-        .crilin, .goku, .gohan, .piccolo h2 {
-           font-size: 1rem;
-           margin-top: 20px;
-        }
-        .crilin, .goku, .gohan, .piccolo{
-           display: flex;
-           flex-direction: column;
-           flex-wrap: nowrap;
-            align-items: center;
-          
-        } 
         
         /* index---------------------------------------------- */
         .indexgoku{
@@ -82,28 +81,29 @@
     
         
        
-         /*videos-------------------*/
+         /*videos---------------------------------------------*/
         .videos{
             flex-direction: column;
             align-items: center;
             margin-top: 120 px;    
-         
-          
-        }
-        .video1{
+            .video1{
            
                 
            
-           width: 80%;
-           height: 60%;
-           iframe {
-            width: auto;
-            height: auto;
-           }
+                width: 80%;
+                height: 60%;
+                iframe {
+                 width: auto;
+                 height: auto;
+                }
+             }
+         
+          
         }
+      
              
        
-        /*imagenes-----------------*/
+        /*imagenes----------------------------------*/
 
         .fotos{
             .imag-1 {
@@ -126,7 +126,7 @@
             }
        
        }
-       /* contatos---------------------------------------------------------------------------------------------------------*/
+       /* contatos------------------------------------------------------------------------------------*/
        form {
         width: 60%;
         height: 50%;
@@ -160,13 +160,22 @@
 
 
        /*footer------------------------------------------------------------------------------------------------------------*/
-       footer a {
-           font-size: 1rem;
+       footer {
+        h3{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .redes-sociales{
+            a {
+                font-size: 1rem;
+            }
+
+        }
+
        }
-       footer h3{
-           font-size: 1rem;
-           margin-top: 5px;
-       }
+       
+      
+       
      
      
     }
