@@ -401,15 +401,41 @@ form .formulario textarea {
     height: auto;
   }
   /*imagenes----------------------------------*/
+  .fotos {
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 230px;
+  }
   .fotos .imag-1 img {
-    margin-top: 20px;
-    width: 40%;
-    height: 50%;
+    width: 0;
+    flex-grow: 1;
+    margin: 0;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .fotos .imag-1 img:hover {
+    width: 230px;
+    opacity: 1;
+    filter: contrast(120px);
   }
   .fotos .imag-2 img {
-    margin-top: 1px;
-    width: 40%;
-    height: 50%;
+    width: 50px;
+    height: 100px;
+    flex-grow: 1;
+    margin: 0;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .fotos .imag-2 img:hover {
+    width: 130px;
+    height: 250px;
+    opacity: 1;
+    filter: contrast(120px);
   }
   /* contatos------------------------------------------------------------------------------------*/
   form {

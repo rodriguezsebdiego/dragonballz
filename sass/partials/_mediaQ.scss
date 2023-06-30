@@ -104,24 +104,61 @@
         /*imagenes----------------------------------*/
 
         .fotos{
+            display: flex;
+            justify-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+            width: 300px;
+            height: 230px;
             .imag-1 {
-                img {
-                   margin-top: 20px;
-                   width: 40%;
-                   height:50%;
+                img{
+                  width: 0;
+                  flex-grow: 1;
+                  margin: 0;
+                  object-fit: cover;
+                  opacity: .8;
+                  transition: .5s ease;
+                //    margin-top: 20px;
+                //    width: 40%;
+                //    height:50%;
                }
+              }
+              .imag-1{
+                img:hover{
+                    width: 230px;
+                    opacity: 1;
+                    filter: contrast(120px);
+                }
               }
               .imag-2 {
                 img{
-                   margin-top: 1px;
-                   width: 40%;
-                   height:50%;
+                    width: 50px;
+                    height: 100px;
+                    flex-grow: 1;
+                    margin: 0;
+                    object-fit: cover;
+                    opacity: .8;
+                    transition: .5s ease;
+                   
+                //    margin-top: 1px;
+                //    width: 40%;
+                //    height:50%;
                   
            
-               }
-            
+               }           
 
             }
+            .imag-2 {
+                img:hover{
+                   
+                       width: 130px;
+                       height: 250px;
+                       opacity: 1;
+                       filter: contrast(120px);
+                   
+               }
+              }
        
        }
        /* contatos------------------------------------------------------------------------------------*/

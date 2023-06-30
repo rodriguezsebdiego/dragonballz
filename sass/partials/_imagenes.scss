@@ -3,19 +3,23 @@
 
 .fotos{
     margin-top: 120px;
-    .imag-1  img {
-        margin: 10px;
-         width: 50%;
-         
-        
-         
-     }
-       
-    
-    
-    .imag-2 img{
-        margin: 10px;
-        width: 50%;
-       height: 30%;
+    .imag-1  {
+        img {
+            margin: 10px;
+             width: 50%;
+             
+            
+             
+         }
+           
     }
-}
+    
+    
+    .imag-2 {
+        img{
+            margin: 10px;
+            width: 50%;
+           height: 30%;
+        }
+    }
+    }
