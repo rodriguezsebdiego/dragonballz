@@ -406,11 +406,10 @@ form .formulario textarea {
     justify-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 300px;
-    height: 230px;
+    margin: 100px 40px;
   }
   .fotos .imag-1 img {
-    width: 0;
+    width: 0%;
     flex-grow: 1;
     margin: 0;
     object-fit: cover;
@@ -423,8 +422,7 @@ form .formulario textarea {
     filter: contrast(120px);
   }
   .fotos .imag-2 img {
-    width: 50px;
-    height: 100px;
+    width: 0;
     flex-grow: 1;
     margin: 0;
     object-fit: cover;
@@ -433,7 +431,7 @@ form .formulario textarea {
   }
   .fotos .imag-2 img:hover {
     width: 130px;
-    height: 250px;
+    height: 350px;
     opacity: 1;
     filter: contrast(120px);
   }
