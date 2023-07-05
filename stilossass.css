@@ -182,7 +182,7 @@ footer .redes-sociales ul a {
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0));
 }
 .personajes .crilin .crilinflex h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   margin-top: 10px;
 }
@@ -207,7 +207,7 @@ footer .redes-sociales ul a {
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0));
 }
 .personajes .goku .gokuflex h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   margin-top: 10px;
 }
@@ -228,7 +228,7 @@ footer .redes-sociales ul a {
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0));
 }
 .personajes .gohan .gohanflex h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   margin-top: 10px;
 }
@@ -249,7 +249,7 @@ footer .redes-sociales ul a {
   filter: drop-shadow(10px 8px 10px rgb(0, 0, 0));
 }
 .personajes .piccolo .piccoloflex h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   margin-top: 10px;
 }
@@ -259,10 +259,10 @@ footer .redes-sociales ul a {
   margin-top: 130px;
 }
 .fotos .imag-1 img {
-  height: 660px;
+  height: 560px;
   width: 200px;
   flex-grow: 1;
-  margin: 0;
+  margin: 8px;
   opacity: 0.8;
   transition: 0.5s ease;
   object-fit: fill;
@@ -281,11 +281,13 @@ footer .redes-sociales ul a {
   object-fit: fill;
   opacity: 0.8;
   transition: 0.5s ease;
+  margin-bottom: 10px;
 }
 .fotos .imag-2 img:hover {
   width: 290px;
   opacity: 1;
   filter: contrast(120px);
+  margin-bottom: 5px;
 }
 
 /*videos--------------------------------------------------------------------------------*/
@@ -373,30 +375,56 @@ form .formulario textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
   }
-  .personajes .crilin {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 1rem;
-    margin-top: 20px;
+  .personajes .crilin .crilinflex {
+    margin: 10px;
   }
-  .personajes .goku {
-    width: 80%;
+  .personajes .crilin .crilinflex img {
+    width: 30%;
     margin-top: 10px;
-    font-size: 1rem;
-    margin-top: 20px;
+  }
+  .personajes .crilin .crilinflex h2 {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: contain;
+  }
+  .personajes .goku .gokuflex {
+    margin: 10px;
+  }
+  .personajes .goku .gokuflex img {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .goku .gokuflex h2 {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
   }
   .personajes .gohan {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 1rem;
-    margin-top: 20px;
+    margin: 10px;
   }
-  .personajes .piccolo {
-    width: 80%;
+  .personajes .gohan img {
+    width: 30%;
     margin-top: 10px;
-    font-size: 1rem;
-    margin-top: 20px;
+  }
+  .personajes .gohan h2 {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .personajes .piccolo .piccoloflex {
+    margin: 10px;
+  }
+  .personajes .piccolo .piccoloflex img {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .piccolo .piccoloflex h2 {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
   }
   /* index---------------------------------------------- */
   .indexgoku .primerParrafo h1 {
@@ -426,7 +454,7 @@ form .formulario textarea {
     justify-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -434,7 +462,7 @@ form .formulario textarea {
     height: 200px;
     width: 50px;
     flex-grow: 1;
-    margin: 0;
+    margin: 2px;
     object-fit: cover;
     opacity: 0.8;
     transition: 0.5s ease;
@@ -449,7 +477,7 @@ form .formulario textarea {
     width: 50px;
     height: 100px;
     flex-grow: 1;
-    margin: 0;
+    margin: 4px 0;
     object-fit: cover;
     opacity: 0.8;
     transition: 0.5s ease;

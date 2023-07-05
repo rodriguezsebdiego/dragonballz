@@ -36,25 +36,59 @@
    
       /* personajes -------------------------------------------*/
       .personajes{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+        @include flex (column,center,center);
+        margin-top: 80px;
+     
+      
        .crilin {
-        @include personajes-img;
-        @include personajes-h2;
-       }
+        .crilinflex{
+            margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+                object-fit: contain;
+    
+            }
+
+        }
+        }
        .goku {
-        @include personajes-img;
-        @include personajes-h2;
+        .gokuflex{
+            margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
+        }
+       
+       
        }
        .gohan {
-        @include personajes-img;
-        @include personajes-h2;
+        .gohaflex{}
+        margin: 10px;
+        img{
+            @include personajes-img;
+        }
+        h2{
+            @include personajes-media;
+        }
+      
        }
        .piccolo {
-        @include personajes-img;
-        @include personajes-h2;
+        .piccoloflex{
+             margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
+        }
+      
        }
       
           
@@ -109,7 +143,7 @@
             justify-items: center;
             flex-direction: column;
             flex-wrap: nowrap;
-            margin-top: 100px;
+            margin-top: 90px;
             margin-left: 0;
             margin-right: 0;
            
@@ -120,7 +154,7 @@
                     width: 50px;
                  
                   flex-grow: 1;
-                  margin: 0;
+                  margin: 2px;
                   object-fit: cover;
                   opacity: .8;
                   transition: .5s ease;
@@ -141,7 +175,7 @@
                     height: 100px;
                     
                     flex-grow: 1;
-                    margin: 0;
+                    margin: 4px 0;
                     object-fit: cover;
                     opacity: .8;
                     transition: .5s ease;

@@ -6,13 +6,19 @@
     align-items: $aline;
 }
 @mixin personajes-img{
-    width: 80%;
+    width: 30%;
     margin-top: 10px;
 
 }
 @mixin personajes-h2 {
-    font-size: 1rem;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 10px;
+}
+@mixin personajes-media{
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
 }
 @mixin personajes-flex {
             display: flex;
