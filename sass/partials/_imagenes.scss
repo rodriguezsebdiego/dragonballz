@@ -2,24 +2,49 @@
 
 
 .fotos{
-    margin-top: 120px;
+    margin-top: 130px;
+   
     .imag-1  {
         img {
-            margin: 10px;
-             width: 50%;
+            height: 50%;
+             width: 70%;
+             flex-grow: 1;
+             margin: 0;
+             object-fit: cover;
+             opacity: .8;
+             transition: .5s ease;
              
             
              
          }
            
     }
+    .imag-1{
+        img:hover{
+            width: 150%;
+            opacity: 1;
+            
+            filter: contrast(120px);
+        }
+    }
     
     
     .imag-2 {
         img{
             margin: 10px;
-            width: 50%;
-           height: 30%;
+            width: 200px;
+            flex-grow: 1;
+            margin: 0;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+        }
+    }
+    .imag-2{
+        img:hover{
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120px);
         }
     }
     }
