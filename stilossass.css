@@ -259,16 +259,17 @@ footer .redes-sociales ul a {
   margin-top: 130px;
 }
 .fotos .imag-1 img {
-  height: 50%;
-  width: 70%;
+  height: 660px;
+  width: 200px;
   flex-grow: 1;
   margin: 0;
-  object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
+  object-fit: fill;
 }
 .fotos .imag-1 img:hover {
-  width: 150%;
+  width: 230px;
+  height: 690px;
   opacity: 1;
   filter: contrast(120px);
 }
@@ -277,12 +278,12 @@ footer .redes-sociales ul a {
   width: 200px;
   flex-grow: 1;
   margin: 0;
-  object-fit: cover;
+  object-fit: fill;
   opacity: 0.8;
   transition: 0.5s ease;
 }
 .fotos .imag-2 img:hover {
-  width: 300px;
+  width: 290px;
   opacity: 1;
   filter: contrast(120px);
 }
@@ -430,7 +431,8 @@ form .formulario textarea {
     margin-right: 0;
   }
   .fotos .imag-1 img {
-    width: 20%;
+    height: 200px;
+    width: 50px;
     flex-grow: 1;
     margin: 0;
     object-fit: cover;
@@ -438,12 +440,14 @@ form .formulario textarea {
     transition: 0.5s ease;
   }
   .fotos .imag-1 img:hover {
-    width: 130px;
+    height: 210px;
+    width: 55px;
     opacity: 1;
     filter: contrast(120px);
   }
   .fotos .imag-2 img {
-    width: 0;
+    width: 50px;
+    height: 100px;
     flex-grow: 1;
     margin: 0;
     object-fit: cover;
@@ -451,10 +455,11 @@ form .formulario textarea {
     transition: 0.5s ease;
   }
   .fotos .imag-2 img:hover {
-    width: 130px;
-    height: 350px;
+    width: 60px;
+    height: 120px;
     opacity: 1;
     filter: contrast(120px);
+    margin-bottom: 5px;
   }
   /* contatos------------------------------------------------------------------------------------*/
   form {

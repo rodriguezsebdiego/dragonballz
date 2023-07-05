@@ -116,7 +116,8 @@
            
             .imag-1 {
                 img{
-                  width: 20%;
+                    height: 200px;
+                    width: 50px;
                  
                   flex-grow: 1;
                   margin: 0;
@@ -128,14 +129,16 @@
               }
               .imag-1{
                 img:hover{
-                    width: 130px;
+                    height: 210px;
+                    width: 55px;
                     opacity: 1;
                     filter: contrast(120px);
                 }
               }
               .imag-2 {
                 img{
-                    width: 0;
+                    width: 50px;
+                    height: 100px;
                     
                     flex-grow: 1;
                     margin: 0;
@@ -151,10 +154,11 @@
             .imag-2 {
                 img:hover{
                    
-                       width: 130px;
-                       height: 350px;
+                       width: 60px;
+                       height: 120px;
                        opacity: 1;
                        filter: contrast(120px);
+                       margin-bottom: 5px;
                    
                }
               }
