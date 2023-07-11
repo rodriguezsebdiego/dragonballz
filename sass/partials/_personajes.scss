@@ -23,9 +23,7 @@
                 filter: drop-shadow(10px 8px 10px rgb(0, 0, 0) );
             }
             h2{
-                font-size: 1.2rem;
-                width: 100%;
-                margin-top: 10px;
+                @include personajes-h2;
             }
 
         }
@@ -33,7 +31,7 @@
     
     }
     .crilin img:hover{
-        width:21% ;
+        width:21%;
         transition: 1s;
         
     }
@@ -53,14 +51,18 @@
             
         }
         h2{
-            // font-size: 1.2rem;
-            // width: 100%;
-            // margin-top: 10px;
-            @include personajes-h2
+            
+            @include personajes-h2;
+           
         }
 
         }
 
+    }
+
+  
+    .gokuflex h2:hover{
+        display: inline;
     }
        
      
@@ -79,9 +81,7 @@
                 filter: drop-shadow(10px 8px 10px rgb(0, 0, 0) );
             }
             h2{
-                font-size: 1.2rem;
-                width: 100%;
-                margin-top: 10px;
+                @include personajes-h2;
             }
 
         }
@@ -102,9 +102,7 @@
             filter: drop-shadow(10px 8px 10px rgb(0, 0, 0) );
         }
         h2{
-            font-size: 1.2rem;
-            width: 100%;
-            margin-top: 10px;
+            @include personajes-h2;
         }
 
         }

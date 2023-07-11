@@ -41,6 +41,11 @@ body {
   z-index: 1;
 }
 
+.error img {
+  height: 100%;
+  width: 100%;
+}
+
 /* header-----------------------------------------------------------------------------------------------------------------*/
 header {
   background: radial-gradient(circle, rgb(239, 129, 18) 14%, rgb(207, 139, 55) 90%);
@@ -146,8 +151,10 @@ footer .redes-sociales ul a {
   justify-content: center;
   text-decoration-line: underline;
   font-size: 3rem;
+  margin-top: 30px;
 }
-.indexgoku .primerParrafo h1 p {
+.indexgoku .primerParrafo p {
+  margin-bottom: 20px;
   font-size: 2rem;
   font-family: "Inconsolata", monospace;
 }
@@ -210,6 +217,9 @@ footer .redes-sociales ul a {
   font-size: 1.2rem;
   width: 100%;
   margin-top: 10px;
+}
+.personajes .gokuflex h2:hover {
+  display: inline;
 }
 .personajes .gohan {
   grid-column: 2/5;
@@ -331,7 +341,7 @@ form .formulario label {
   flex-direction: column;
 }
 form .formulario input {
-  width: 50%;
+  width: 80%;
   height: 50%;
 }
 form .formulario textarea {
@@ -343,8 +353,8 @@ form .formulario textarea {
   outline: none;
 }
 
-/*mediaq------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 500px) {
+/*mediaq-----mobile-------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -367,15 +377,18 @@ form .formulario textarea {
     justify-content: space-between;
   }
   header nav .link a {
-    font-size: 80%;
+    font-size: 100%;
   }
   /* personajes -------------------------------------------*/
+  .mobilepersonaje {
+    display: none;
+  }
   .personajes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 100px;
   }
   .personajes .crilin .crilinflex {
     margin: 10px;
@@ -385,7 +398,7 @@ form .formulario textarea {
     margin-top: 10px;
   }
   .personajes .crilin .crilinflex h2 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     width: 100%;
     margin-top: 10px;
     object-fit: contain;
@@ -398,19 +411,19 @@ form .formulario textarea {
     margin-top: 10px;
   }
   .personajes .goku .gokuflex h2 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     width: 100%;
     margin-top: 10px;
   }
-  .personajes .gohan {
+  .personajes .gohan .gohanflex {
     margin: 10px;
   }
-  .personajes .gohan img {
+  .personajes .gohan .gohanflex img {
     width: 30%;
     margin-top: 10px;
   }
-  .personajes .gohan h2 {
-    font-size: 0.8rem;
+  .personajes .gohan .gohanflex h2 {
+    font-size: 1.5rem;
     width: 100%;
     margin-top: 10px;
   }
@@ -422,17 +435,23 @@ form .formulario textarea {
     margin-top: 10px;
   }
   .personajes .piccolo .piccoloflex h2 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     width: 100%;
     margin-top: 10px;
   }
   /* index---------------------------------------------- */
+  .indexgoku {
+    margin: 5px;
+  }
+  .indexgoku .goku1 img {
+    margin-top: 100px;
+  }
   .indexgoku .primerParrafo h1 {
     font-size: 2em;
     margin-top: 10px;
   }
   .indexgoku .primerParrafo p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   /*videos---------------------------------------------*/
   .videos {
@@ -491,21 +510,37 @@ form .formulario textarea {
   }
   /* contatos------------------------------------------------------------------------------------*/
   form {
-    width: 60%;
-    height: 50%;
+    width: 300px;
+    height: 320px;
     font-size: small;
-    justify-content: center;
+    justify-content: start;
     margin: 20%;
     margin-top: 30%;
+    padding: 0;
   }
   form h1 {
     font-size: 140%;
+    text-align: start;
   }
   form .formulario {
-    width: 80%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  form .formulario label {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
   form .formulario textarea {
-    width: 100%;
+    width: 150%;
+    margin-right: 20px;
   }
   /*footer------------------------------------------------------------------------------------------------------------*/
   footer h3 {
@@ -514,6 +549,210 @@ form .formulario textarea {
   }
   footer .redes-sociales a {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  header .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .logo img {
+    width: 40%;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav .link {
+    justify-content: space-between;
+  }
+  header nav .link a {
+    font-size: 100%;
+  }
+  /* personajes -------------------------------------------*/
+  .mobilepersonaje {
+    display: none;
+  }
+  .personajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .personajes .crilin .crilinflex {
+    margin: 10px;
+  }
+  .personajes .crilin .crilinflex img {
+    font-size: 1rem;
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .crilin .crilinflex h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: contain;
+  }
+  .personajes .goku .gokuflex {
+    margin: 10px;
+  }
+  .personajes .goku .gokuflex img {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .goku .gokuflex h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .personajes .gohan .gohanflex {
+    margin: 10px;
+  }
+  .personajes .gohan .gohanflex img {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .gohan .gohanflex h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .personajes .piccolo .piccoloflex {
+    margin: 10px;
+  }
+  .personajes .piccolo .piccoloflex img {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .personajes .piccolo .piccoloflex h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* index---------------------------------------------- */
+  .indexgoku {
+    margin: 5px;
+  }
+  .indexgoku .goku1 img {
+    margin-top: 100px;
+  }
+  .indexgoku .primerParrafo h1 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .indexgoku .primerParrafo p {
+    font-size: 1.2rem;
+  }
+  /*videos---------------------------------------------*/
+  .videos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120 px;
+  }
+  .videos .video1 {
+    width: 80%;
+    height: 60%;
+  }
+  .videos .video1 iframe {
+    width: auto;
+    height: auto;
+  }
+  /*imagenes----------------------------------*/
+  .fotos {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .fotos .imag-1 img {
+    height: 200px;
+    width: 50px;
+    flex-grow: 1;
+    margin: 2px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .fotos .imag-1 img:hover {
+    height: 210px;
+    width: 55px;
+    opacity: 1;
+    filter: contrast(120px);
+  }
+  .fotos .imag-2 img {
+    width: 50px;
+    height: 100px;
+    flex-grow: 1;
+    margin: 4px 0;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .fotos .imag-2 img:hover {
+    width: 60px;
+    height: 120px;
+    opacity: 1;
+    filter: contrast(120px);
+    margin-bottom: 5px;
+  }
+  /* contatos------------------------------------------------------------------------------------*/
+  form {
+    width: 300px;
+    height: 320px;
+    font-size: small;
+    justify-content: start;
+    margin: 70px 280px;
+    margin-top: 30%;
+    padding: 0;
+  }
+  form h1 {
+    font-size: 140%;
+    text-align: start;
+  }
+  form .formulario {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  form .formulario label {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  form .formulario textarea {
+    width: 150%;
+    margin-right: 20px;
+  }
+  /*footer------------------------------------------------------------------------------------------------------------*/
+  footer h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  footer .redes-sociales a {
+    font-size: 1rem;
+  }
+  /* error-------------------------------------*/
+  .error {
+    width: 100%;
+    height: 570px;
   }
 }
 

@@ -1,5 +1,5 @@
-/*mediaq------------------------------------------------------------------------------------------*/
-@media only screen and (max-width:500px) {
+/*mediaq-----mobile-------------------------------------------------------------------------------------*/
+@media only screen and (max-width:768px) {
    
     header{
         flex-direction: column;
@@ -22,7 +22,7 @@
                 justify-content: space-between;
 
                 a{
-                    font-size: 80%;
+                    font-size: 100%;
                    }
 
             }
@@ -35,9 +35,13 @@
       
    
       /* personajes -------------------------------------------*/
+      .mobilepersonaje {
+        display: none;
+
+      }
       .personajes{
         @include flex (column,center,center);
-        margin-top: 80px;
+        margin-top: 100px;
      
       
        .crilin {
@@ -68,14 +72,17 @@
        
        }
        .gohan {
-        .gohaflex{}
-        margin: 10px;
-        img{
-            @include personajes-img;
+        .gohanflex{
+            margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
         }
-        h2{
-            @include personajes-media;
-        }
+        
+        
       
        }
        .piccolo {
@@ -98,6 +105,12 @@
         
         /* index---------------------------------------------- */
         .indexgoku{
+            margin: 5px;
+            .goku1{
+                img{
+                    margin-top: 100px;
+                }
+            }
          
             .primerParrafo{
                 h1{
@@ -105,7 +118,7 @@
                     margin-top: 10px;
                  }
                  p{
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                  }
 
             }
@@ -200,24 +213,41 @@
        }
        /* contatos------------------------------------------------------------------------------------*/
        form {
-        width: 60%;
-        height: 50%;
+        width: 300px;
+        height: 320px;
         font-size: small;
-        justify-content: center;
+        justify-content: start;
         margin: 20%;
         margin-top: 30%;
+        padding: 0;
         h1{
-            font-size: 140%;
+            font-size: 140%;          
+            text-align: start;
+            
+
         }
 
         .formulario{
-            width: 80%;
+            width: 90px;
+            height: 90px;
+            @include flex(column,center,center);
+            margin-top: 90px;
+            label{
+                
+                width: 60%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items:end ;
+            }
            
 
            
 
            textarea{
-            width: 100%;
+            width: 150%;
+            
+            margin-right: 20px;
 
             }
         }
@@ -244,4 +274,280 @@
        
      
      
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        header{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .logo{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 40%;
+                     
+                    }
+            }
+              nav {
+                width: 80%;
+                .link{
+                    justify-content: space-between;
+    
+                    a{
+                        font-size: 100%;
+                       }
+    
+                }
+            }
+              
+        }
+         /* personajes -------------------------------------------*/
+      .mobilepersonaje {
+        display: none;
+
+      }
+      .personajes{
+        @include flex (column,center,center);
+        margin-top: 100px;
+     
+      
+       .crilin {
+        .crilinflex{
+            margin: 10px;
+            img{
+                @include personajes-tablet;
+            }
+            h2{
+                @include personajes-tableth2;
+                object-fit: contain;
+    
+            }
+
+        }
+        }
+       .goku {
+        .gokuflex{
+            margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
+        }
+       
+       
+       }
+       .gohan {
+        .gohanflex{
+            margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
+        }
+        
+        
+      
+       }
+       .piccolo {
+        .piccoloflex{
+             margin: 10px;
+            img{
+                @include personajes-img;
+            }
+            h2{
+                @include personajes-media;
+            }
+        }
+      
+       }
+      
+          
+      }
+     
+      
+        
+        /* index---------------------------------------------- */
+        .indexgoku{
+            margin: 5px;
+            .goku1{
+                img{
+                    margin-top: 100px;
+                }
+            }
+         
+            .primerParrafo{
+                h1{
+                    font-size: 2em;
+                    margin-top: 10px;
+                 }
+                 p{
+                    font-size: 1.2rem;
+                 }
+
+            }
+        } 
+    
+        
+       
+         /*videos---------------------------------------------*/
+        .videos{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 120 px;    
+            .video1{
+           
+                
+           
+                width: 80%;
+                height: 60%;
+                iframe {
+                 width: auto;
+                 height: auto;
+                }
+             }
+         
+          
+        }
+      
+             
+       
+        /*imagenes----------------------------------*/
+
+        .fotos{
+            
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-top: 150px;
+            margin-left: 20px;
+            margin-right: 0;
+            margin-bottom: 10px;
+           
+           
+            .imag-1 {
+                img{
+                    height: 200px;
+                    width: 50px;
+                 
+                  flex-grow: 1;
+                  margin: 2px;
+                  object-fit: cover;
+                  opacity: .8;
+                  transition: .5s ease;
+             
+               }
+              }
+              .imag-1{
+                img:hover{
+                    height: 210px;
+                    width: 55px;
+                    opacity: 1;
+                    filter: contrast(120px);
+                }
+              }
+              .imag-2 {
+                img{
+                    width: 50px;
+                    height: 100px;
+                    
+                    flex-grow: 1;
+                    margin: 4px 0;
+                    object-fit: cover;
+                    opacity: .8;
+                    transition: .5s ease;
+                   
+               
+           
+               }           
+
+            }
+            .imag-2 {
+                img:hover{
+                   
+                       width: 60px;
+                       height: 120px;
+                       opacity: 1;
+                       filter: contrast(120px);
+                       margin-bottom: 5px;
+                   
+               }
+              }
+       
+       }
+       /* contatos------------------------------------------------------------------------------------*/
+       form {
+        width: 300px;
+        height: 320px;
+        font-size: small;
+        justify-content: start;
+        margin: 70px 280px;
+        margin-top: 30%;
+        padding: 0;
+        h1{
+            font-size: 140%;          
+            text-align: start;
+            
+
+        }
+
+        .formulario{
+            width: 90px;
+            height: 90px;
+            @include flex(column,center,center);
+            margin-top: 90px;
+            label{
+                
+                width: 60%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items:end ;
+            }
+           
+
+           
+
+           textarea{
+            width: 150%;
+            
+            margin-right: 20px;
+
+            }
+        }
+       }
+
+
+
+       /*footer------------------------------------------------------------------------------------------------------------*/
+       footer {
+        h3{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .redes-sociales{
+            a {
+                font-size: 1rem;
+            }
+
+        }
+
+       }
+       /* error-------------------------------------*/
+
+       .error{
+        width: 100%;
+        height: 570px;
+       }
+
+
+
+        
     }
